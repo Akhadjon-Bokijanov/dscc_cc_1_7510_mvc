@@ -14,7 +14,7 @@ namespace CW_1_007510_MVC.Controllers
     public class ProductsController : Controller
     {
         // GET: ProductsController
-        public  string baseUrl = "https://localhost:44353";
+        public  string baseUrl = "http://ec2-3-142-153-99.us-east-2.compute.amazonaws.com";
         private string  getList = "/api/Products";
         public async Task<ActionResult> Index()
         {
