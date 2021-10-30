@@ -1,22 +1,10 @@
 version: 0.0
 os: windows
 files:
-  - source: /
-    destination: C:\inetpub\wwwroot
+  - source: \
+    destination: C:\temp\webApp
+  
+hooks:
   BeforeInstall:
-  # - location: scripts/install_dependencies.sh
-  #   timeout: 300
-  #   runas: root
-#   AfterInstall:
-#    - location: C:\inetpub\wwwroot\
-#      timeout: 300
-#      runas: root
-  ApplicationStart:
-  #   - location: scripts/start_server.sh
-  #   - location: scripts/create_test_db.sh
-  #     timeout: 300
-  #     runas: root
-  ApplicationStop:
-  #   - location: scripts/stop_server.sh
-  #    timeout: 300
-  #    runas: root
+    - location: .\StageArtifact.ps1
+    - location: .\CreateWebSite.ps1
