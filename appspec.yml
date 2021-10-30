@@ -8,3 +8,6 @@ hooks:
   BeforeInstall:
     - location: .\StageArtifact.ps1
     - location: .\CreateWebSite.ps1
+  ApplicationStart:
+  
+  ApplicationStop:
