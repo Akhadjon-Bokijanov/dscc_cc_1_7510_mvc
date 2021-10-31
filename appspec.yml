@@ -1,13 +1,12 @@
 version: 0.0
 os: windows
 files:
-  - source: \
+  - source: /
     destination: C:\temp\webApp
-  
 hooks:
   BeforeInstall:
     - location: .\StageArtifact.ps1
     - location: .\CreateWebSite.ps1
+  AfterInstall:
   ApplicationStart:
-  
   ApplicationStop:
